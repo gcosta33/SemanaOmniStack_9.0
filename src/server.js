@@ -12,9 +12,9 @@ const app = express();
 // req.query = Acessar query params(para filtros)
 // req.params = Acessar route params(para edição,delete)
 
-mongoose.connect('mongodb+srv://gcostaOmni:gcostaOmni@omnistack-jeayd.mongodb.net/semana09?retryWrites=true&w=majority',{
-  useNewUrlParser:true,
-  useUnifiedTopology:true
+mongoose.connect('mongodb+srv://gcostaOmni:gcostaOmni@omnistack-jeayd.mongodb.net/semana09?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 app.use(express.json());
 app.use(routes);
